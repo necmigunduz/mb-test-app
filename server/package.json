@@ -20,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/necmigunduz/mb-test-app/issues"
   },
-  "homepage": "https://github.com/necmigunduz/mb-test-app#readme"
+  "homepage": "https://github.com/necmigunduz/mb-test-app#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "mongoose": "^6.2.2"
+  }
 }
