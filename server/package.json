@@ -1,0 +1,24 @@
+{
+  "name": "mb-test-app-server",
+  "version": "1.0.0",
+  "description": "Takehome server for Malwarebytes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/necmigunduz/mb-test-app.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "ExpressJS",
+    "ReactJS"
+  ],
+  "author": "Necmi Gunduz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/necmigunduz/mb-test-app/issues"
+  },
+  "homepage": "https://github.com/necmigunduz/mb-test-app#readme"
+}
