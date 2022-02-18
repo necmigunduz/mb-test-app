@@ -59,3 +59,24 @@ router.post('/login', async(req, res) => {
 });
 
 // Delete User
+router.delete('/:uid/only', async(req, res) => {
+    try {
+        const removedUser = await User.remove({_id: req.params.uid});
+        res.json(removedUser);
+    } catch(err) {
+        res.json({message: err});
+    }
+});
+
+router.delete('/:uid/all', async(req, res) => {
+    try {
+        const removedUser = await User.remove({_id: req.params.uid, get: req.body});
+        const removedProducts = await Product.deleteMany({userID: req.params.uid});
+        res.json(removedUser);
+        res.json(removedProducts);
+    } catch(err) {
+        res.json({message: err})
+    }
+});
+
+export default router;
